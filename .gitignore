@@ -1,0 +1,4 @@
+*.jpg
+scripts/lib/const.yml
+.DS_Store
+._*
