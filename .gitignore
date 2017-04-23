@@ -1,4 +1,5 @@
 *.jpg
 scripts/lib/const.yml
+images_backup
 .DS_Store
 ._*
