@@ -10,7 +10,6 @@ Image.all.each do |image|
   rescue => e
     image.mark_as_fail!
     Slack.post(e)
-    next
   end
   sleep(5)
 end
