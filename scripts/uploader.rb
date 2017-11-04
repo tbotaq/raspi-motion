@@ -3,7 +3,7 @@ require_relative './lib/slack.rb'
 
 Slack.post("Start posting.")
 Image.all.each do |image|
-  sleep(1)
+  sleep(5)
   begin
     image.crop!
     Slack.upload(image)
