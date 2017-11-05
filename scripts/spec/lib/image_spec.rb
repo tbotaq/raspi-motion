@@ -14,7 +14,7 @@ describe Image do
       describe "const.motion.image_root_dir" do
         subject{Image.send(:const).motion.image_root_dir}
         it "returns full path of images dir" do
-          is_expected.to eq("/var/motion/images")
+          is_expected.to eq("/home/pi/motion/images")
         end
         it "returns the path actually existing" do
           expect(File.exist?(subject)).to be true
