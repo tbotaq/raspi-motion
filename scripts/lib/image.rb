@@ -11,7 +11,7 @@ class Image
     private
 
     def all_paths
-      Dir.glob( File.join(const.motion.image_root_dir, "*.jpg") ).sort
+      Dir.glob( File.join(const.motion.image_dir, "*.jpg") ).sort
     end
   end
 
@@ -42,6 +42,6 @@ class Image
 
   def failed_image_dir
     motion_const = self.class.const.motion
-    File.join(motion_const.image_root_dir, motion_const.failed_image_dir_name)
+    File.join(motion_const.image_dir, motion_const.failed_image_dir_name)
   end
 end
