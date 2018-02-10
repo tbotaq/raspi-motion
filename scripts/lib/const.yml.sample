@@ -2,5 +2,5 @@ motion:
   image_dir: '/var/motion/images'
   failed_image_dir_name: 'upload_failed'
 slack:
-  chennel_name:
+  channel_name:
   token:
