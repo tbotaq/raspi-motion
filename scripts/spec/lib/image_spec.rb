@@ -11,8 +11,8 @@ describe Image do
       it "is not nil" do
         is_expected.not_to be_nil
       end
-      describe "const.motion.image_root_dir" do
-        subject{Image.send(:const).motion.image_root_dir}
+      describe "const.motion.image_dir" do
+        subject{Image.send(:const).motion.image_dir}
         it "returns full path of images dir" do
           is_expected.to eq("/home/pi/motion/images")
         end
