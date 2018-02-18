@@ -1,8 +1,11 @@
 require_relative "./lib/image.rb"
 require_relative './lib/slack.rb'
 
+images = Image.all
+exit if images.empty?
+
 Slack.post("Start posting.")
-Image.all.each do |image|
+images.each do |image|
   begin
     image.crop!
     Slack.upload(image)
